@@ -1,0 +1,230 @@
+body {
+    font-family: 'David Libre', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 200px;
+    max-height: 100px;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header .cta-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-button:hover {
+    background-color: #e64a19;
+}
+
+.book-table {
+    background-color: white;
+    color: #FF6347;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.customers {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customers .customer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.customers h2 {
+    font-size: 2.5em;
+}
+
+.customers p {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: 0.45em;
+    padding-bottom: 30px;
+}
+
+.customer {
+    background-color: #ffffff;
+    padding: 2rem 1rem 1rem; 
+    margin: 3rem 0;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -70px; 
+    margin-bottom: 1rem;
+}
+
+
+.content {
+    flex-grow: 1;
+}
+
+
+.stars {
+    color: gold;
+    margin-bottom: 0.5rem;
+}
+.customer p{
+    width: 300px;
+    font-size:1em;
+}
+.author {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.add-review {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.add-review form {
+    display: inline-block;
+    width: 80%;
+    max-width: 600px;
+}
+
+.add-review textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.add-review button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    cursor: pointer;
+}
+.add-review button: hover{
+    
+    background-color: 	#FF7F50;	
+} 
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .customers p {
+        width: 90%;
+    }
+    
+    .customer {
+        width: 90%;
+        margin: 2rem auto;
+    }
+    
+    .user-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .add-review form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 150px;
+        max-height: 80px;
+    }
+    
+    header .cta-button {
+        padding: 8px 16px;
+    }
+    
+    .customers h2 {
+        font-size: 1.8em;
+    }
+    
+    .customers p {
+        width: 100%;
+        font-size: 0.9em;
+    }
+    
+    .customer {
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    
+    .user-image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .add-review textarea {
+        height: 80px;
+    }
+}
